@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Tewekul Bakery</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/tewkul/favicon.ico">
+
+    <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&amp;family=Handlee&amp;family=Inter:wght@300;400;500;600;700&amp;family=Comfortaa:wght@300;400;500;600;700&amp;family=Montaga&amp;family=Pacifico&amp;family=Fredericka+the+Great&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Yellowtail&amp;display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/lastudioicons.css">
+    <link rel="stylesheet" href="assets/css/vendor/dliconoutline.css">
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="assets/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <div class="header-section header-transparent header-sticky">
+            <div class="container position-relative">
+
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-xl-3 col-7">
+                        <!-- Header Logo Start -->
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img class="white-logo" src="assets/images/logo-white.svg" width="229" height="62" alt="Logo">
+                            </a>
+                        </div>
+                        <!-- Header Logo End -->
+                    </div>
+                    <div class="col-lg-7 col-xl-6 d-none d-lg-block">
+                        <!-- Header Menu Start -->
+                        <div class="header-menu">
+                            <ul class="header-primary-menu d-flex justify-content-center">
+                                <li><a class="menu-item-link" href="index.html" data-en="Home" data-am="መነሻ"><span>Home</span></a></li>
+                               <li><a class="menu-item-link" href="about.html" data-en="About" data-am="ስለ እኛ"><span>About Us</span></a></li>
+                                <li><a class="menu-item-link" href="#"  data-en="Pages" data-am="ገፆች"><span>Pages</span></a>
+                                    <ul class="sub-menu">
+                                        <li><a class="sub-item-link" href="faq.html" data-en="FAQs" data-am="ተደጋጋሚ ጥያቄዋች" ><span>FAQs</span></a></li>
+                                        <li><a class="sub-item-link" href="blog.html " data-en="Blogs" data-am="ብሎግ"><span>Blogs</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="menu-item-link" data-en="languages" data-am="ቋንቋ"  href="#"><span>languages</span></a>
+                                    <ul class="sub-menu" id="language-switcher">
+                                       <li> <a onclick="changeLanguage('en')" class="sub-item-link" data-en="English" data-am="ኢንግሊዘኛ"><span>English</span></a></li>
+                                       <li> <a onclick="changeLanguage('am')"class="sub-item-link " data-en="Amharic" data-am="አማርኛ"><span>Amharic</span></a></li>
+                                    </ul>
+                                <li><a class="menu-item-link" href="contact.html" data-en="Contact" data-am="ያግኙን"><span>Contact</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- Header Menu End -->
+                    </div>
+                    <div class="col-lg-2 col-xl-3 col-5">
+                        <!-- Header Meta Start -->
+                        <div class="header-meta">
+                            <ul class="header-meta__action d-flex justify-content-end">
+                                
+                                <li class="d-lg-none">
+                                    <button class="action" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"><i class="lastudioicon-menu-8-1"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Header Meta End -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- Header End -->
+
+    <!-- Search Start  -->
+    <div class="search-popup position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center p-6 bg-black bg-opacity-75">
+        <div class="search-popup__form position-relative">
+            <form action="#">
+                <input class="search-popup__field border-0 border-bottom bg-transparent text-white w-100 tra py-3" type="text" placeholder="Search…">
+                <button class="search-popup__icon text-white border-0 bg-transparent position-absolute top-50 end-0 translate-middle-y"><i class="lastudioicon-zoom-1"></i></button>
+            </form>
+        </div>
+        <button class="search-popup__close position-absolute top-0 end-0 m-8 p-3 lh-1 border-0 text-white fs-4"><i class="lastudioicon-e-remove"></i></button>
+    </div>
+    <!-- Search End -->
+
+    <!-- offcanvas Menu Start -->
+    <div class="offcanvas offcanvas-end offcanvas-menu bg-secondary" id="offcanvasMenu">
+        <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"><i class="lastudioicon-e-remove"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mobile-primary-menu">
+                <li><a class="menu-item-link" href="index.html" data-en="Home" data-am="መነሻ" ><span>Home</span></a></li>
+                <li><a class="menu-item-link" href="about.html" data-en="About" data-am="ስለ እኛ"><span>About</span></a></li>
+                <li><a class="menu-item-link" data-en="languages" data-am="ቋንቋ"  href="#"><span>languages</span></a>
+                    <ul class="sub-menu" id="language-switcher">
+                       <li> <a onclick="changeLanguage('en')" class="sub-item-link" data-en="English" data-am="ኢንግሊዘኛ"><span>English</span></a></li>
+                       <li> <a onclick="changeLanguage('am')"class="sub-item-link " data-en="Amharic" data-am="አማርኛ"><span>Amharic</span></a></li>
+                    </ul></li>
+                <li><a class="menu-item-link" href="#" data-en="Pages" data-am="ገፆች"><span>Pages</span></a>
+                    <ul class="sub-menu">
+                        <li><a class="sub-item-link" href="faq.html" data-en="FAQs" data-am="ተደጋጋሚ ጥያቄዋች"><span>FAQs</span></a></li>
+                        <li><a class="sub-item-link" href="blog.html" data-en="Blog" data-am="ብሎግ"><span>Blog</span></a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li><a class="menu-item-link" href="contact.html" data-en="Contact" data-am="ያግኙን"><span>Contact</span></a></li>
+            </ul>
+            <ul class="hotline-wrapper offcanvas-hotline">
+                <li>
+                    <div class="hotline">
+                        <i class="lastudioicon lastudioicon-support248"></i>
+                        <div class="hotline-content">
+                            <span class="hotline-text">Hotline</span>
+                            <a class="hotline-link" href="tel:0123456789">251911453924</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hotline">
+                        <i class="lastudioicon lastudioicon-pin-check"></i>
+                        <div class="hotline-content">
+                            <span class="hotline-text" >Store Location</span>
+                            <a class="hotline-link" href="#/">Sheger City, Furi</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- offcanvas Menu End -->
+
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb" data-bg-image="assets/images/bg/breadcrumb-bg-4.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h1 class="breadcrumb_title" data-en="FAQs" data-am="ተደጋጋሚ ጥያቄዋች"></h1>
+                        <ul class="breadcrumb_list">
+                            <li><a href="index.html" data-en="Home" data-am="መነሻ"></a></li>
+                            <li data-en="FAQs" data-am="ተደጋጋሚ ጥያቄዋች">FAQs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Faq Section Start -->
+    <div class="faq">
+        <div class="container custom-container">
+            <div class="row" id="exampleOne">
+                <div class="col-12">
+                    <div class="faq-top" data-bg-image="assets/images/shape/faqs.png">
+                        <h2 class="faq-top__title" data-en="Have Any Question" data-am="ጥያቄ አለዎት" ></h2>
+                        <form action="#" class="faq-search">
+                            <input type="text" class="faq-search__input form-field" placeholder="Search Questions...">
+                            <button class="faq-search__btn"><i class="lastudioicon-zoom-1"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="faq-head">
+                        <h3 class="faq-head__title">Shopping Questions</h3>
+                        <span class="faq-head__border"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                                    <span data-en="What kind of cakes are available?" data-am="ምን አይነት ኬኮች ይገኛሉ? ">Do you ship worldwide?</span>
+                                    <i class="lastudioicon lastudioicon-down-arrow"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#exampleOne" ">
+                                <div class="accordion-body" data-en="We have cakes in various flavors and sizes. Choose from chocolate, vanilla, red velvet, carrot, and many more. You can also order cakes for special occasions." data-am="በተለያዩ ጣዕምና መጠኖች ኬኮች አሉን። ከቸኮሌት፣ ቫኒላ፣ ቀይ ቬልቬት፣ ካሮት፣ እና ሌሎች ብዙ ይምረጡ። ለልዩ አጋጣሚዎችም ኬክ ማዘዝ ይችላሉ">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. apibus leo.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" >
+                                    <span data-en="What kind of breads are available?" data-am="ምን አይነት ዳቦዎች አሉ?">Amet minim mollit non deserunt ullamco.</span>
+                                    <i class="lastudioicon lastudioicon-down-arrow"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#exampleOne">
+                                <div class="accordion-body" data-en="We bake fresh bread daily.  We have French bread, traditional Ethiopian bread, whole wheat bread, and many more." data-am=" ትኩስ ዳቦዎችን በየቀኑ እንጋገራለን። ከፈረንጅ ዳቦ፣ ከሀገር ዳቦ፣ ከእህል ዳቦ እና ሌሎች ብዙ ይገኛሉ።">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. apibus leo.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" >
+                                    <span data-en="How can I order a cake?" data-am="ኬክ እንዴት ማዘዝ እችላለሁ?">Amet minim mollit non deserunt ullamco.</span>
+                                    <i class="lastudioicon lastudioicon-down-arrow"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#exampleOne">
+                                <div class="accordion-body" data-en="You can order by phone, email, or by coming directly to our bakery" data-am="  በስልክ፣ በኢሜል ወይም በቀጥታ ወደ መጋገሪያችን በመምጣት ማዘዝ ይችላሉ።">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. apibus leo.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" >
+                                    <span data-en="How far in advance do I need to order?" data-am="ምን ያህል ጊዜ በፊት ማዘዝ አለብኝ?">Do you ship worldwide?</span>
+                                    <i class="lastudioicon lastudioicon-down-arrow"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#exampleOne">
+                                <div class="accordion-body" data-en="For special cakes, it is recommended to order at least 2-3 days in advan" data-am="ለልዩ ኬኮች ቢያንስ ከ 2-3 ቀናት በፊት ማዘዝ ይመከራል።">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. apibus leo.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive" >
+                                    <span data-en="Do you have pickup or delivery service?" data-am="የመውሰጃ ወይም የማድረስ አገልግሎት አላችሁ? ">Amet minim mollit non deserunt ullamco.</span>
+                                    <i class="lastudioicon lastudioicon-down-arrow"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#exampleOne">
+                                <div class="accordion-body" data-en="Please ask us about our pickup and delivery service." data-am="እባክዎን ስለ መውሰጃ እና ማድረስ አገልግሎታችን ይጠይቁን">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. apibus leo.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    <span data-en="Where are you located?" data-am="  የት ነው የምትገኙት?">Amet minim mollit non deserunt ullamco.</span>
+                                    <i class="lastudioicon lastudioicon-down-arrow"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#exampleOne">
+                                <div class="accordion-body" data-en="Furi, Sheger city" data-am="ፉሪ, ሸገር ሲቲ">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. apibus leo.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                   
+    <!-- Faq Section End -->
+
+    <div class="bg-dark-four dark-footer">
+        <!-- Footer Strat -->
+        <div class="footer-section">
+
+            <!-- Footer Widget Section Strat -->
+            <div class="footer-widget-section">
+                <div class="container custom-container">
+                    <div class="row gy-6">
+                        <div class="col-md-4">
+                            <!-- Footer Widget Section Strat -->
+                            <div class="footer-widget">
+                                <div class="footer-widget__logo">
+                                    <a class="logo-dark" href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
+                                    <a class="logo-white d-none" href="index.html"><img src="assets/images/logo-white.svg" alt="Logo"></a>
+                                </div>
+                                <div class="footer-widget__social">
+                                    <a href="#/"><i class="lastudioicon-b-facebook"></i></a>
+                                    <a href="#/"><i class="lastudioicon-b-twitter"></i></a>
+                                    <a href="#/"><i class="lastudioicon-b-pinterest"></i></a>
+                                    <a href="#/"><i class="lastudioicon-b-instagram"></i></a>
+                                </div>
+                            </div>
+                            <!-- Footer Widget Section End -->
+                        </div>
+                        <div class="col-md-8">
+                            <!-- Footer Widget Wrapper Strat -->
+                            <div class="footer-widget-wrapper d-flex flex-wrap gap-4">
+
+                                <!-- Footer Widget Strat -->
+                                <div class="footer-widget flex-grow-1">
+                                    <h4 class="footer-widget__title">Categories</h4>
+
+                                    <ul class="footer-widget__link">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="blog.html">Blogs</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget End -->
+
+                                <!-- Footer Widget Strat -->
+                                <div class="footer-widget flex-grow-1">
+                                    <h4 class="footer-widget__title">Services</h4>
+
+                                    <ul class="footer-widget__link">
+                                        <li><a href="coming-soon.html">Delivery</a></li>
+                                        <li><a href="javascript:void(0)">Payment</a></li>
+                                        <li><a href="javascript:void(0)">Returns</a></li>
+                                        <li><a href="javascript:void(0)">Privacy</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget End -->
+
+                            </div>
+                            <!-- Footer Widget Wrapper End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Widget Section End -->
+
+            <!-- Footer Copyright Strat -->
+            <div class="footer-copyright footer-copyright-two">
+                <div class="container">
+                    <!-- Footer Copyright Text Strat -->
+                    <div class="footer-copyright-text text-center">
+                        <p>&copy; 2025 <strong> Tewekul Bakery </strong> Made by <i class="lastudioicon-heart-1"></i> by <a href="https://hazatech.netlify.app">HAZA TECH</a></p>
+                    </div>
+                    <!-- Footer Copyright Text End -->
+                </div>
+            </div>
+            <!-- Footer Copyright End -->
+
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <!-- JS Vendor, Plugins & Activation Script Files -->
+
+    <!-- Vendors JS -->
+    <script src="assets/js/vendor/modernizr-3.11.7.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/ajax.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+
+    <!-- Activation JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/myscript.js"></script>
+
+</body>
+
+
+
+</html>
