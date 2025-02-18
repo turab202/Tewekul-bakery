@@ -19,6 +19,6 @@ Welcome to the **Tewekul Bakery** GitHub repository! This project is a beautiful
 
 📌 Feel free to contribute, report issues, or suggest improvements!  
 
-🔗 **Live Demo (if available):** [Tewekul Bakery](#)  
+🔗 **Live Demo:** [https://tewekul-bakery.netlify.app]
 
 Happy Coding! 🍰✨
